@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+float calculateSalary(float basic, float housing, float transport)
+{
+    return basic + housing + transport;
+}
+
+int main()
+{
+    float basic, housing, transport;
+
+    printf("Enter basic salary: ");
+    scanf("%f", &basic);
+
+    printf("Enter housing allowance: ");
+    scanf("%f", &housing);
+
+    printf("Enter transport allowance: ");
+    scanf("%f", &transport);
+
+    printf("Gross salary: %.2f\n", calculateSalary(basic, housing, transport));
+
+    return 0;
+}
